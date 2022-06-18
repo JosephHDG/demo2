@@ -27,19 +27,56 @@ public class PlayerControllerBuilderFactory implements BuilderFactory {
 
     public static class PropertyControllerBuilder implements Builder<PropertyController> {
 
-        public String playerimageUrl = "players-images/player1.png";
+        public String name;
+        public int price;
+        public int rent;
+        public int colIndex;
+        public int rowIndex;
 
-        public PlayerModel playerModel;
-        public PlayerView playerView;
+        public int getColIndex() {
+            return colIndex;
+        }
 
-        public String getPlayerimageUrl() {
-            return playerimageUrl;
+        public void setColIndex(int colIndex) {
+            this.colIndex = colIndex;
+        }
+
+        public int getPrice() {
+            return price;
+        }
+
+        public void setPrice(int price) {
+            this.price = price;
+        }
+
+        public int getRent(){
+            return rent;
+        }
+
+        public void setRent(int rent) {
+            this.rent = rent;
+        }
+
+        public int getRowIndex() {
+            return rowIndex;
+        }
+
+        public void setRowIndex(int rowIndex) {
+            this.rowIndex = rowIndex;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
         }
 
         @Override
         public PropertyController build() {
 
-            return new PropertyController();
+            return new PropertyController(name, price, rent, colIndex, rowIndex);
         }
     }
 

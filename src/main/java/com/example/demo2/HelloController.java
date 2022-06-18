@@ -37,7 +37,7 @@ public class HelloController {
     public Pane main;
 
     @FXML
-    public PlayerController playerController1;
+    public PlayerController playerController1 = new PlayerController();
 
     @FXML
     public PropertyController propertyController1, propertyController2, propertyController3, propertyController4;
@@ -64,17 +64,17 @@ public class HelloController {
             }
 
 
-            //if(GridPane.getColumnIndex(playerController1.playerViewBuilder.playerView1) == 2){; //add row index
-            //     popuptext.setWrapText(true);
-            //     popuptext.setText("U Staat nu op het paarsevak, wilt u dit eigendom kopen?" + "\n");
-            //     popuptext.appendText("\n" + "Price: " + Integer.toString(propertyController1.propertyModel1.getPrice()) + "\n");
-            //     popuptext.appendText("Rent: " + Integer.toString(propertyController1.propertyModel1.getRent()));
-            //     System.out.println(propertyController1.propertyModel1.getPrice());
-            //     popupdialog.setVisible(true);
-            //
-            // }else {
-            //     popupdialog.setVisible(false);
-            // }
+            if(GridPane.getColumnIndex(playerController1.playerViewBuilder.playerView1) == 2){; //add row index
+                 popuptext.setWrapText(true);
+                 popuptext.setText("U Staat nu op het paarsevak, wilt u dit eigendom kopen?" + "\n");
+                 popuptext.appendText("\n" + "Price: " + Integer.toString(propertyController1.propertyModel1.getPrice()) + "\n");
+                 popuptext.appendText("Rent: " + Integer.toString(propertyController1.propertyModel1.getRent()));
+                 System.out.println(propertyController1.propertyModel1.getPrice());
+                 popupdialog.setVisible(true);
+
+             }else {
+                 popupdialog.setVisible(false);
+             }
         }
     }
 
@@ -91,16 +91,18 @@ public class HelloController {
         playerController1.playerViewBuilder.playerView1.setFitWidth(50);
         playerController1.setVisible(true);
 
-        propertyController1 = new PropertyController("PannenkoekenHuis", 600, 120, 3, 0);
-        propertyController2 = new PropertyController("Sierplein", 450, 250, 6, 4 );
-        propertyController3 = new PropertyController("NS-Spoorwegen", 20000, 8500, 3, 6);
-        propertyController4 = new PropertyController("PC-Hoofdstraat", 250000, 120000, 0, 4);
 
-        propertyControllers =  new ArrayList<>();
-        propertyControllers.add(propertyController1);
-        propertyControllers.add(propertyController2);
-        propertyControllers.add(propertyController3);
-        propertyControllers.add(propertyController4);
+
+        //propertyController1 = new PropertyController("PannenkoekenHuis", 600, 120, 3, 0);
+        //propertyController2 = new PropertyController("Sierplein", 450, 250, 6, 4 );
+        //propertyController3 = new PropertyController("NS-Spoorwegen", 20000, 8500, 3, 6);
+        //propertyController4 = new PropertyController("PC-Hoofdstraat", 250000, 120000, 0, 4);
+
+        //propertyControllers =  new ArrayList<>();
+        //propertyControllers.add(propertyController1);
+        //propertyControllers.add(propertyController2);
+        //propertyControllers.add(propertyController3);
+        //propertyControllers.add(propertyController4);
 
 
         GridPane.setColumnIndex(playerController1.playerViewBuilder.playerView1, 0);

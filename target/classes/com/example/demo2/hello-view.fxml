@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.example.demo2.PlayerController?>
-<?import com.example.demo2.PropertyController?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -17,6 +15,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import com.example.demo2.PlayerController?>
+<?import com.example.demo2.PropertyController?>
 
 <Pane fx:id="main" accessibleRole="BUTTON" cache="true" cacheHint="SCALE" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-position: 45; -fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
    <children>
@@ -49,38 +49,26 @@
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="6" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="3" GridPane.rowIndex="6">
-               <children>
-                  <PropertyController fx:id="propertyController4" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-               </children></Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <PlayerController fx:id="playerController1"> </PlayerController>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="6" GridPane.rowIndex="4">
-               <children>
-                  <PropertyController fx:id="propertyController3" layoutX="43.0" layoutY="44.0" prefWidth="1.0" GridPane.rowIndex="4" GridPane.columnIndex="6" />
-               </children></Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="6" GridPane.rowIndex="2">
-               <children>
-                  <PropertyController fx:id="propertyController2" layoutX="24.0" layoutY="43.0" GridPane.rowIndex="2" GridPane.columnIndex="6" />
-               </children></Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: LIME;" GridPane.columnIndex="1" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" />
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="3">
-               <children>
-                   <PropertyController fx:id="propertyController1" GridPane.columnIndex="3" GridPane.rowIndex="0" />
-               </children></Pane>
-            <Pane pickOnBounds="false" prefHeight="59.0" prefWidth="63.0" style="-fx-background-color: red;">
-               <children>
-                   <PlayerController fx:id="playerController1" visible="false"> </PlayerController>
-               </children>
-            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.columnIndex="3" />
+
+            <Pane pickOnBounds="false" prefHeight="59.0" prefWidth="63.0" style="-fx-background-color: red;"></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
